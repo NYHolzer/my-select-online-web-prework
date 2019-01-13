@@ -5,6 +5,8 @@ def my_select(collection)
     yield(arg) 
        if (collection[i]).(arg) == true 
          new_collection << collection[i]
+       else 
+         collection.pop(i)
     i += 1 
   end
 end
