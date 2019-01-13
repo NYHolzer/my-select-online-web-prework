@@ -1,8 +1,8 @@
-def my_select(collection)
+def my_select(array)
   i = 0 
   new_collection = []
   while i < collection.length 
-    x = yield (collection[i])
+    if yield (collection[i])
        if x == true 
          new_collection << collection[i]
        else 
