@@ -7,6 +7,7 @@ def my_select(collection)
          new_collection << collection[i]
        else 
          collection.pop(i)
+       end
     i += 1 
   end
 end
